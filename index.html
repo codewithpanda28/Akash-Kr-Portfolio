@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberFolio - Digital Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: 'Courier New', monospace;
+            color: #00ff41;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-container {
+            text-align: center;
+            position: relative;
+        }
+
+        .cyber-logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 20px #00ff41;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .loading-text {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+
+        .progress-bar {
+            width: 300px;
+            height: 4px;
+            background: rgba(0, 255, 65, 0.2);
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff41, #00cc33);
+            width: 0%;
+            animation: loading 3s ease-in-out forwards;
+            box-shadow: 0 0 10px #00ff41;
+        }
+
+        .terminal-cursor {
+            display: inline-block;
+            background: #00ff41;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 20px #00ff41; }
+            to { text-shadow: 0 0 30px #00ff41, 0 0 40px #00ff41; }
+        }
+
+        @keyframes loading {
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .redirect-message {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0;
+            animation: fadeIn 1s ease-in 2.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcyberfolio8246back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="cyber-logo">CYBERFOLIO</div>
+        <div class="loading-text">Initializing digital portfolio<span class="terminal-cursor">_</span></div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <div class="redirect-message">Redirecting to command center...</div>
+    </div>
+
+    <script>
+        // Redirect to hero command center after loading animation
+        setTimeout(function() {
+            window.location.href = 'pages/hero_command_center.html';
+        }, 3500);
+
+        // Add some interactive terminal-like effects
+        const loadingText = document.querySelector('.loading-text');
+        const messages = [
+            'Initializing digital portfolio',
+            'Loading cyber modules',
+            'Establishing secure connection',
+            'Accessing command center'
+        ];
+        
+        let messageIndex = 0;
+        const messageInterval = setInterval(() => {
+            if (messageIndex < messages.length - 1) {
+                messageIndex++;
+                loadingText.innerHTML = messages[messageIndex] + '<span class="terminal-cursor">_</span>';
+            } else {
+                clearInterval(messageInterval);
+            }
+        }, 800);
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>

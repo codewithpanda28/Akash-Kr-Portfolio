@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #00FFFF; /* electric cyan */
+  --color-primary-50: #E6FFFF; /* very light cyan */
+  --color-primary-100: #CCFFFF; /* light cyan */
+  --color-primary-200: #99FFFF; /* lighter cyan */
+  --color-primary-300: #66FFFF; /* medium light cyan */
+  --color-primary-400: #33FFFF; /* medium cyan */
+  --color-primary-500: #00FFFF; /* electric cyan base */
+  --color-primary-600: #00CCCC; /* darker cyan */
+  --color-primary-700: #009999; /* dark cyan */
+  --color-primary-800: #006666; /* darker cyan */
+  --color-primary-900: #003333; /* darkest cyan */
+
+  /* Secondary Colors */
+  --color-secondary: #1a0033; /* deep purple */
+  --color-secondary-50: #F5F0FF; /* very light purple */
+  --color-secondary-100: #EBE0FF; /* light purple */
+  --color-secondary-200: #D6C2FF; /* lighter purple */
+  --color-secondary-300: #C2A3FF; /* medium light purple */
+  --color-secondary-400: #AD85FF; /* medium purple */
+  --color-secondary-500: #9966FF; /* purple base */
+  --color-secondary-600: #7A52CC; /* darker purple */
+  --color-secondary-700: #5C3D99; /* dark purple */
+  --color-secondary-800: #3D2966; /* darker purple */
+  --color-secondary-900: #1a0033; /* deep purple base */
+
+  /* Accent Colors */
+  --color-accent: #FF0080; /* neon pink */
+  --color-accent-50: #FFE6F5; /* very light pink */
+  --color-accent-100: #FFCCEB; /* light pink */
+  --color-accent-200: #FF99D6; /* lighter pink */
+  --color-accent-300: #FF66C2; /* medium light pink */
+  --color-accent-400: #FF33AD; /* medium pink */
+  --color-accent-500: #FF0080; /* neon pink base */
+  --color-accent-600: #CC0066; /* darker pink */
+  --color-accent-700: #99004D; /* dark pink */
+  --color-accent-800: #660033; /* darker pink */
+  --color-accent-900: #33001A; /* darkest pink */
+
+  /* Background Colors */
+  --color-background: #000000; /* pure black */
+  --color-background-50: #F7F7F7; /* very light gray */
+  --color-background-100: #EEEEEE; /* light gray */
+  --color-background-200: #DDDDDD; /* lighter gray */
+  --color-background-300: #CCCCCC; /* medium light gray */
+  --color-background-400: #BBBBBB; /* medium gray */
+  --color-background-500: #999999; /* gray base */
+  --color-background-600: #777777; /* darker gray */
+  --color-background-700: #555555; /* dark gray */
+  --color-background-800: #333333; /* darker gray */
+  --color-background-900: #000000; /* pure black base */
+
+  /* Surface Colors */
+  --color-surface: #2D1B69; /* electric purple */
+  --color-surface-50: #F0EDFF; /* very light electric purple */
+  --color-surface-100: #E0DBFF; /* light electric purple */
+  --color-surface-200: #C2B7FF; /* lighter electric purple */
+  --color-surface-300: #A394FF; /* medium light electric purple */
+  --color-surface-400: #8570FF; /* medium electric purple */
+  --color-surface-500: #664CFF; /* electric purple base */
+  --color-surface-600: #523DCC; /* darker electric purple */
+  --color-surface-700: #3D2E99; /* dark electric purple */
+  --color-surface-800: #2D1B69; /* electric purple base */
+  --color-surface-900: #1F1247; /* darkest electric purple */
+
+  /* Text Colors */
+  --color-text-primary: #FFFFFF; /* pure white */
+  --color-text-secondary: #B3FFFF; /* light cyan */
+  --color-text-tertiary: #80CCCC; /* medium cyan */
+
+  /* Status Colors */
+  --color-success: #00FF88; /* bright green */
+  --color-success-50: #E6FFF5; /* very light green */
+  --color-success-100: #CCFFEB; /* light green */
+  --color-success-200: #99FFD6; /* lighter green */
+  --color-success-300: #66FFC2; /* medium light green */
+  --color-success-400: #33FFAD; /* medium green */
+  --color-success-500: #00FF88; /* bright green base */
+  --color-success-600: #00CC6E; /* darker green */
+  --color-success-700: #009954; /* dark green */
+  --color-success-800: #00663A; /* darker green */
+  --color-success-900: #003320; /* darkest green */
+
+  --color-warning: #FFB800; /* electric amber */
+  --color-warning-50: #FFF9E6; /* very light amber */
+  --color-warning-100: #FFF2CC; /* light amber */
+  --color-warning-200: #FFE599; /* lighter amber */
+  --color-warning-300: #FFD966; /* medium light amber */
+  --color-warning-400: #FFCC33; /* medium amber */
+  --color-warning-500: #FFB800; /* electric amber base */
+  --color-warning-600: #CC9300; /* darker amber */
+  --color-warning-700: #996E00; /* dark amber */
+  --color-warning-800: #664A00; /* darker amber */
+  --color-warning-900: #332500; /* darkest amber */
+
+  --color-error: #FF4444; /* bright red */
+  --color-error-50: #FFEBEB; /* very light red */
+  --color-error-100: #FFD6D6; /* light red */
+  --color-error-200: #FFADAD; /* lighter red */
+  --color-error-300: #FF8585; /* medium light red */
+  --color-error-400: #FF5C5C; /* medium red */
+  --color-error-500: #FF4444; /* bright red base */
+  --color-error-600: #CC3636; /* darker red */
+  --color-error-700: #992929; /* dark red */
+  --color-error-800: #661B1B; /* darker red */
+  --color-error-900: #330E0E; /* darkest red */
+}
+
+@layer base {
+  body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer components {
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.2);
+  }
+
+  .border-glow {
+    border: 1px solid rgba(0, 255, 255, 0.4);
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1.0;
+    }
+  }
+
+  .transition-smooth {
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-reveal {
+    transition: all 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
