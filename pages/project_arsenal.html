@@ -1,105 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Arsenal - Digital Creations & Technical Mastery | CyberFolio</title>
-    <meta name="description" content="Explore Akash Kumar's cutting-edge project portfolio featuring full-stack applications, AI integrations, and innovative digital solutions with detailed case studies." />
+    <title>Project Arsenal - Digital Creations & Technical Mastery | PortFolio</title>
+    <meta name="description"
+        content="Explore Akash Kumar's cutting-edge project portfolio featuring full-stack applications, AI integrations, and innovative digital solutions with detailed case studies." />
     <link rel="stylesheet" href="../css/main.css" />
     <style>
         @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            33% { transform: translateY(-20px) rotate(1deg); }
-            66% { transform: translateY(10px) rotate(-1deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            33% {
+                transform: translateY(-20px) rotate(1deg);
+            }
+
+            66% {
+                transform: translateY(10px) rotate(-1deg);
+            }
         }
-        
+
         @keyframes glow-pulse {
-            0%, 100% { 
-                box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 
-                           0 0 40px rgba(0, 255, 255, 0.2);
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(0, 255, 255, 0.3),
+                    0 0 40px rgba(0, 255, 255, 0.2);
             }
-            50% { 
-                box-shadow: 0 0 30px rgba(0, 255, 255, 0.5), 
-                           0 0 60px rgba(0, 255, 255, 0.3);
+
+            50% {
+                box-shadow: 0 0 30px rgba(0, 255, 255, 0.5),
+                    0 0 60px rgba(0, 255, 255, 0.3);
             }
         }
-        
+
         @keyframes counter-up {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        
+
         @keyframes slide-in {
-            from { opacity: 0; transform: translateX(-30px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
-        
+
         .project-card {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(10px);
             background: rgba(45, 27, 105, 0.1);
             border: 1px solid rgba(0, 255, 255, 0.2);
         }
-        
+
         .project-card:hover {
             transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 0 40px rgba(0, 255, 255, 0.4), 
-                       0 0 80px rgba(0, 255, 255, 0.2),
-                       0 20px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.4),
+                0 0 80px rgba(0, 255, 255, 0.2),
+                0 20px 40px rgba(0, 0, 0, 0.3);
             border-color: rgba(0, 255, 255, 0.6);
         }
-        
+
         .filter-btn {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(10px);
             background: rgba(45, 27, 105, 0.1);
             border: 1px solid rgba(0, 255, 255, 0.3);
         }
-        
+
         .filter-btn.active {
             background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 128, 0.2));
             border-color: #00FFFF;
             box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
         }
-        
+
         .tech-badge {
             background: rgba(0, 255, 255, 0.1);
             border: 1px solid rgba(0, 255, 255, 0.3);
             transition: all 0.3s ease;
         }
-        
+
         .tech-badge:hover {
             background: rgba(0, 255, 255, 0.2);
             border-color: #00FFFF;
             box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
         }
-        
+
         .glass-nav {
             backdrop-filter: blur(10px);
             background: rgba(45, 27, 105, 0.1);
             border: 1px solid rgba(0, 255, 255, 0.2);
         }
-        
+
         .floating-code {
             animation: float 6s ease-in-out infinite;
         }
-        
+
         .metric-counter {
             font-variant-numeric: tabular-nums;
             animation: counter-up 0.6s ease-out;
         }
-        
+
         .case-study-section {
             animation: slide-in 0.8s ease-out;
         }
-        
+
         .progress-bar {
             background: linear-gradient(90deg, #00FFFF, #FF0080);
             animation: glow-pulse 2s ease-in-out infinite;
         }
     </style>
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcyberfolio8246back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+    <script type="module"
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2FPortFolio8246back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
 </head>
+
 <body class="bg-gradient-to-br from-background via-surface-900 to-surface-800 min-h-screen overflow-x-hidden">
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
@@ -107,65 +138,80 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <a href="hero_command_center.html" class="text-2xl font-orbitron font-bold text-primary glow-primary">
-                        CyberFolio
+                    <a href="hero_command_center.html"
+                        class="text-2xl font-orbitron font-bold text-primary ">
+                        PortFolio
                     </a>
                 </div>
-                
+
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="hero_command_center.html" class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
-                            Command Center
+                        <a href="hero_command_center.html"
+                            class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
+                            Home
                         </a>
-                        <a href="about_protocol.html" class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
-                            About Protocol
+                        <a href="about_protocol.html"
+                            class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
+                            About
                         </a>
-                        <a href="project_arsenal.html" class="text-primary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:glow-primary hover:bg-surface-800/30">
-                            Project Arsenal
+                        <a href="project_arsenal.html"
+                            class="text-primary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:glow-primary hover:bg-surface-800/30">
+                            Project
                         </a>
-                        <a href="skill_matrix.html" class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
-                            Skill Matrix
+                        <a href="skill_matrix.html"
+                            class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
+                            Skill
                         </a>
-                        <a href="contact_interface.html" class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
-                            Contact Interface
+                        <a href="contact_interface.html"
+                            class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
+                            Contact
                         </a>
-                        <a href="code_laboratory.html" class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
+                        <a href="code_laboratory.html"
+                            class="text-text-secondary font-rajdhani font-medium px-3 py-2 rounded-md text-sm transition-smooth hover:text-primary hover:glow-primary hover:bg-surface-800/30">
                             Code Lab
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary transition-smooth p-2">
+                    <button id="mobile-menu-button"
+                        class="text-text-secondary hover:text-primary transition-smooth p-2">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
             </div>
         </div>
-        
+
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="md:hidden hidden glass-nav border-t border-primary/20">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="hero_command_center.html" class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
-                    Command Center
+                <a href="hero_command_center.html"
+                    class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
+                    Home
                 </a>
-                <a href="about_protocol.html" class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
-                    About Protocol
+                <a href="about_protocol.html"
+                    class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
+                    About
                 </a>
-                <a href="project_arsenal.html" class="text-primary font-rajdhani font-medium block px-3 py-2 rounded-md text-base">
-                    Project Arsenal
+                <a href="project_arsenal.html"
+                    class="text-primary font-rajdhani font-medium block px-3 py-2 rounded-md text-base">
+                    Project
                 </a>
-                <a href="skill_matrix.html" class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
-                    Skill Matrix
+                <a href="skill_matrix.html"
+                    class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
+                    Skill
                 </a>
-                <a href="contact_interface.html" class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
-                    Contact Interface
+                <a href="contact_interface.html"
+                    class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
+                    Contact
                 </a>
-                <a href="code_laboratory.html" class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
+                <a href="code_laboratory.html"
+                    class="text-text-secondary font-rajdhani font-medium block px-3 py-2 rounded-md text-base hover:text-primary transition-smooth">
                     Code Lab
                 </a>
             </div>
@@ -174,16 +220,20 @@
 
     <!-- Floating Code Background -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div class="floating-code absolute top-20 left-10 text-primary/20 font-fira text-xs" style="animation-delay: 0s;">
+        <div class="floating-code absolute top-20 left-10 text-primary/20 font-fira text-xs"
+            style="animation-delay: 0s;">
             const projects = await fetchPortfolio();
         </div>
-        <div class="floating-code absolute top-40 right-20 text-accent/30 font-fira text-xs" style="animation-delay: 2s;">
+        <div class="floating-code absolute top-40 right-20 text-accent/30 font-fira text-xs"
+            style="animation-delay: 2s;">
             import { Innovation } from './arsenal';
         </div>
-        <div class="floating-code absolute bottom-40 left-20 text-primary/25 font-fira text-xs" style="animation-delay: 4s;">
+        <div class="floating-code absolute bottom-40 left-20 text-primary/25 font-fira text-xs"
+            style="animation-delay: 4s;">
             deploy('production', { success: true });
         </div>
-        <div class="floating-code absolute top-60 left-1/2 text-accent/20 font-fira text-xs" style="animation-delay: 1s;">
+        <div class="floating-code absolute top-60 left-1/2 text-accent/20 font-fira text-xs"
+            style="animation-delay: 1s;">
             React.createElement('MasterPiece');
         </div>
     </div>
@@ -194,541 +244,949 @@
         <section class="py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto text-center">
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-orbitron font-black text-primary glow-primary-lg mb-6">
-                    PROJECT ARSENAL
+                    INNOVATION PORTFOLIO
                 </h1>
                 <p class="text-xl md:text-2xl font-rajdhani text-text-secondary mb-8 max-w-3xl mx-auto">
-                    Digital Creations & Technical Mastery - Where Innovation Meets Implementation
+                    A curated showcase of AI-driven systems, automation frameworks,
+                    full-stack engineering, and real client deployments powering
+                    ThinkAIQ — my growing tech startup.
                 </p>
-                
+
                 <!-- Project Metrics -->
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto">
                     <div class="glass-nav rounded-lg p-6 border-glow">
-                        <div class="text-3xl font-orbitron font-bold text-primary metric-counter" id="total-projects">6+</div>
-                        <div class="text-text-secondary font-rajdhani text-sm mt-2">Total Projects</div>
+                        <div class="text-3xl font-orbitron font-bold text-primary metric-counter" id="total-projects">
+                            15+</div>
+                        <div class="text-text-secondary font-rajdhani text-sm mt-2">Total Deployments</div>
                     </div>
+
                     <div class="glass-nav rounded-lg p-6 border-glow">
-                        <div class="text-3xl font-orbitron font-bold text-accent metric-counter" id="client-projects">4+</div>
-                        <div class="text-text-secondary font-rajdhani text-sm mt-2">Client Projects</div>
+                        <div class="text-3xl font-orbitron font-bold text-accent metric-counter" id="client-projects">6+
+                        </div>
+                        <div class="text-text-secondary font-rajdhani text-sm mt-2">Client Implementations</div>
                     </div>
+
                     <div class="glass-nav rounded-lg p-6 border-glow">
-                        <div class="text-3xl font-orbitron font-bold text-success metric-counter" id="open-source">2+</div>
-                        <div class="text-text-secondary font-rajdhani text-sm mt-2">Open Source</div>
+                        <div class="text-3xl font-orbitron font-bold text-success metric-counter" id="open-source">3+
+                        </div>
+                        <div class="text-text-secondary font-rajdhani text-sm mt-2">Open Source Systems</div>
                     </div>
+
                     <div class="glass-nav rounded-lg p-6 border-glow">
-                        <div class="text-3xl font-orbitron font-bold text-warning metric-counter" id="technologies">10+</div>
-                        <div class="text-text-secondary font-rajdhani text-sm mt-2">Technologies</div>
+                        <div class="text-3xl font-orbitron font-bold text-warning metric-counter" id="technologies">18+
+                        </div>
+                        <div class="text-text-secondary font-rajdhani text-sm mt-2">Tech Stack Expertise</div>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <!-- Filter Section -->
-        <section class="py-8 px-4 sm:px-6 lg:px-8 border-b border-primary/20">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 border-b border-primary/20">
             <div class="max-w-7xl mx-auto">
+
+                <!-- Filter Buttons -->
                 <div class="flex flex-wrap justify-center gap-4 mb-8">
-                    <button class="filter-btn active px-6 py-3 rounded-lg font-rajdhani font-semibold text-primary transition-smooth" data-filter="all">
-                        All Projects
+
+                    <button class="filter-btn active px-6 py-3 rounded-lg font-rajdhani font-semibold 
+                text-primary transition-smooth border border-primary/40 hover:border-primary 
+                hover:shadow-glow-primary-sm" data-filter="all">
+                        All Deployments
                     </button>
-                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold text-text-secondary hover:text-primary transition-smooth" data-filter="fullstack">
-                        Full-Stack
+
+                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold 
+                text-text-secondary transition-smooth hover:text-primary hover:border-primary
+                border border-primary/20" data-filter="fullstack">
+                        Full-Stack Systems
                     </button>
-                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold text-text-secondary hover:text-primary transition-smooth" data-filter="react">
-                        React.js
+
+                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold
+                text-text-secondary transition-smooth hover:text-primary hover:border-primary
+                border border-primary/20" data-filter="react">
+                        React / Next.js
                     </button>
-                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold text-text-secondary hover:text-primary transition-smooth" data-filter="ai">
-                        AI/ML
+
+                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold
+                text-text-secondary transition-smooth hover:text-primary hover:border-primary
+                border border-primary/20" data-filter="ai">
+                        AI Automations
                     </button>
-                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold text-text-secondary hover:text-primary transition-smooth" data-filter="python">
-                        Python
+
+                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold
+                text-text-secondary transition-smooth hover:text-primary hover:border-primary
+                border border-primary/20" data-filter="python">
+                        Python Services
                     </button>
-                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold text-text-secondary hover:text-primary transition-smooth" data-filter="mobile">
-                        Mobile
+
+                    <button class="filter-btn px-6 py-3 rounded-lg font-rajdhani font-semibold
+                text-text-secondary transition-smooth hover:text-primary hover:border-primary
+                border border-primary/20" data-filter="mobile">
+                        Mobile Applications
                     </button>
                 </div>
-                
-                <!-- Search and Reset -->
-                <div class="flex justify-center items-center gap-4">
+
+                <!-- Search + Reset -->
+                <div class="flex justify-center items-center gap-4 p-2">
                     <div class="relative">
-                        <input type="text" id="project-search" placeholder="Search projects..." class="bg-surface-800/50 border border-primary/30 rounded-lg px-4 py-2 pl-10 text-text-primary font-exo focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
-                        <svg class="w-5 h-5 text-text-tertiary absolute left-3 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        <input type="text" id="project-search" placeholder="Search through the ecosystem..." class="bg-surface-800/50 border border-primary/30 rounded-lg px-4 py-2 pl-10 
+                    text-text-primary font-exo focus:border-primary focus:outline-none 
+                    focus:ring-2 focus:ring-primary/20 transition-smooth" />
+
+                        <svg class="w-5 h-5 text-text-tertiary absolute left-3 top-1/2 
+                    transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </div>
-                    <button id="reset-filters" class="px-4 py-2 border border-accent/50 rounded-lg text-accent hover:bg-accent/10 transition-smooth font-rajdhani">
-                        Reset
+
+                    <button id="reset-filters" class="px-8 py-2 border border-accent/40 rounded-lg text-accent
+                hover:bg-accent/10 transition-smooth font-rajdhani hover:shadow-glow-accent-sm">
+                        Reset Filters
                     </button>
                 </div>
             </div>
         </section>
+
 
         <!-- Featured Projects Grid -->
         <section class="py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
                 <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
-                    <!-- Project Card 1: E-Commerce Platform -->
-                    <div class="project-card rounded-lg overflow-hidden" data-category="fullstack react">
+
+                    <!-- Project Card 1: ThinkAIQ WhatsApp Bot & AI Agent -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="automation whatsapp ai">
                         <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="E-Commerce Platform Dashboard" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <img src="https://images.unsplash.com/photo-1678361919736-7c99a5fc676b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="ThinkAIQ WhatsApp Bot & AI Agent"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
                             <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
                             <div class="absolute top-4 right-4">
-                                <span class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">NeoCommerce Platform</h3>
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">WhatsApp Bot & AI Agent</h3>
                             <p class="text-text-secondary font-exo text-sm mb-4">
-                                Full-stack e-commerce solution with AI-powered recommendations, real-time inventory management, and advanced analytics dashboard.
+                                Automated WhatsApp bot and AI assistant for handling client communication, lead
+                                qualification, and instant responses to boost engagement and efficiency.
                             </p>
-                            
+
                             <!-- Tech Stack -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">React.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Node.js</span>
+                                <span
+                                    class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">WhatsApp-web.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">n8n
+                                    Workflows</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">AI APIs</span>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-accent">+5K</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Interactions/Month</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-success">92%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Client Satisfaction</div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Project Card 2: Voice Calling Automation -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="automation voice calling">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1590608897129-79d01e5ff0f8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="Voice Calling Automation"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">Voice Calling Automation</h3>
+                            <p class="text-text-secondary font-exo text-sm mb-4">
+                                Outbound and inbound call automation system for reminders, follow-ups, and customer
+                                engagement, reducing manual effort and improving efficiency.
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Twilio</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Node.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Python</span>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-accent">+15K</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Calls/Month</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-success">90%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Customer Satisfaction</div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 3: Lead Generation Automation -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="automation lead generation">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581091870627-3e034b7d0f6e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="Lead Generation Automation"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">Lead Generation Automation
+                            </h3>
+                            <p class="text-text-secondary font-exo text-sm mb-4">
+                                Automated system for scraping leads, filtering data, and integrating directly with CRM
+                                platforms, streamlining business outreach and improving conversion rates.
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Python</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Node.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Puppeteer</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Axios</span>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-accent">+50K</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Leads/Month</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-success">85%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Data Accuracy</div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4: AI HR Platform – Candidate WhatsApp Assistant -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="automation ai hr">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1604079624012-0c8b1c2c3b89?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="AI HR Platform"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/3184632/pexels-photo-3184632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">AI HR Automation</h3>
+                            <p class="text-text-secondary font-exo text-sm mb-4">
+                                Automates job posting, candidate screening, and onboarding through WhatsApp, providing
+                                intelligent AI-assisted responses to candidates and streamlining HR workflows.
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Node.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">WhatsApp
+                                    API</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">AI NLP
+                                    Models</span>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-accent">+5K</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Candidates Assisted</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-success">92%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Process Automation Efficiency
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 5: Smartphone Test Farm (STF) Web App -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="web-app testing">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="Smartphone Test Farm"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/5082576/pexels-photo-5082576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">Smartphone Test Farm (STF) Web
+                                App</h3>
+                            <p class="text-text-secondary font-exo text-sm mb-4">
+                                Multi-device web application for testing smartphones remotely, running automated
+                                scripts, and monitoring device performance, ensuring quality across different devices.
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">React</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Next.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">STF APIs</span>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-accent">+50 Devices</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Supported</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-success">99%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Testing Accuracy</div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 6: Web Scraping Projects -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="web-scraping data">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581090700227-8b1c17297c38?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="Web Scraping Projects"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">Web Scraping Projects</h3>
+                            <p class="text-text-secondary font-exo text-sm mb-4">
+                                Automated data collection from multiple online sources with filtering and preprocessing,
+                                ideal for market research, job listings, and product info (non-Amazon/Flipkart).
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Python</span>
+                                <span
+                                    class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">BeautifulSoup</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Puppeteer</span>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-accent">+100K</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Records Collected</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-success">98%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Automation Accuracy</div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 7: Bio Data / Resume Automation Project -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="automation fullstack">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581092580491-1d2f38e5d3e1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="Resume Automation Project"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">Bio Data / Resume Automation
+                            </h3>
+                            <p class="text-text-secondary font-exo text-sm mb-4">
+                                Automated system to generate professional resumes and fill forms directly from user
+                                data. Enhances productivity and ensures consistent formatting across documents.
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">React</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Node.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">PDF
+                                    Libraries</span>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-accent">+5K</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Resumes Generated</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-success">99%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Accuracy & Formatting</div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+               <!-- Project Card 8: Singapore Airlines – Business & Automation Websites -->
+<div class="project-card rounded-lg overflow-hidden" data-category="fullstack client">
+    <div class="relative h-48 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+            alt="Singapore Airlines Automation Websites"
+            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+            loading="lazy"
+            onerror="this.src='https://images.pexels.com/photos/37347/office-building-skyline-architecture-37347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+        <div class="absolute top-4 right-4">
+            <span
+                class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+        </div>
+    </div>
+    <div class="p-6">
+        <h3 class="text-xl font-orbitron font-bold text-primary mb-3">Singapore Airlines – Business & Automation Websites</h3>
+        <p class="text-text-secondary font-exo text-sm mb-4">
+            Developed Singapore Airlines' automation and business websites, including lead management, booking automation, and responsive company pages, ensuring smooth workflow and modern UI/UX.
+        </p>
+
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Next.js</span>
+            <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Tailwind CSS</span>
+            <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">ShadCN</span>
+            <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">AI Automation</span>
+        </div>
+
+        <!-- Performance Metrics -->
+        <div class="grid grid-cols-2 gap-4 mb-4">
+            <div class="text-center">
+                <div class="text-lg font-orbitron font-bold text-accent">+5</div>
+                <div class="text-xs text-text-tertiary font-rajdhani">Automated Websites</div>
+            </div>
+            <div class="text-center">
+                <div class="text-lg font-orbitron font-bold text-success">100%</div>
+                <div class="text-xs text-text-tertiary font-rajdhani">Responsive & Optimized</div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex gap-3">
+            <a href="javascript:void(0)"
+                class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                Live Demo
+            </a>
+            <a href="javascript:void(0)"
+                class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                Details
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+                    <!-- Project Card 9: IIMW Goa – Music Conference Website -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="fullstack client">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="IIMW Goa Music Conference Website"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">IIMW Goa – Music Conference
+                                Website</h3>
+                            <p class="text-text-secondary font-exo text-sm mb-4">
+                                Created a dynamic website for IIMW Goa Music Conference featuring event information,
+                                AI-powered features, ticketing integration, and a seamless user experience for attendees
+                                and organizers.
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Next.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Tailwind
+                                    CSS</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">AI
+                                    Integrations</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Ticketing
+                                    System</span>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-accent">+500</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Tickets Sold</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-success">99%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">User Satisfaction</div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 10: E-Commerce Platform – NeoCommerce -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="fullstack client">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581092334420-0f78628a2c04?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="NeoCommerce E-Commerce Platform"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/3945680/pexels-photo-3945680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">NeoCommerce – E-Commerce
+                                Platform</h3>
+                            <p class="text-text-secondary font-exo text-sm mb-4">
+                                Developed a modern e-commerce platform with AI-powered product recommendations, secure
+                                payment gateway integration, and detailed analytics for optimized sales and customer
+                                experience.
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">React</span>
                                 <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Node.js</span>
                                 <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">MongoDB</span>
                                 <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Stripe</span>
                             </div>
-                            
+
                             <!-- Performance Metrics -->
                             <div class="grid grid-cols-2 gap-4 mb-4">
                                 <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-accent">98%</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Performance</div>
+                                    <div class="text-lg font-orbitron font-bold text-accent">+1K</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Products Listed</div>
                                 </div>
                                 <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-success">$2.4M</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Revenue</div>
+                                    <div class="text-lg font-orbitron font-bold text-success">97%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Customer Satisfaction</div>
                                 </div>
                             </div>
-                            
+
                             <!-- Action Buttons -->
                             <div class="flex gap-3">
-                                <a href="javascript:void(0)" class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
                                     Live Demo
                                 </a>
-                                <a href="javascript:void(0)" class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                            
-                            <!-- Client Testimonial -->
-                            <div class="mt-4 p-3 bg-surface-800/30 rounded-lg border-l-2 border-accent">
-                                <p class="text-xs text-text-secondary font-exo italic">"Increased our conversion rate by 340% within 3 months."</p>
-                                <p class="text-xs text-accent font-rajdhani mt-1">- Sarah Chen, TechStart CEO</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2: AI Analytics Dashboard -->
-                    <div class="project-card rounded-lg overflow-hidden" data-category="ai python fullstack">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="AI Analytics Dashboard" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
-                            <div class="absolute top-4 right-4">
-                                <span class="bg-primary/20 text-primary px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Featured</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">Neural Analytics Hub</h3>
-                            <p class="text-text-secondary font-exo text-sm mb-4">
-                                AI-powered business intelligence platform with predictive analytics, real-time data processing, and automated insights generation.
-                            </p>
-                            
-                            <!-- Tech Stack -->
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Python</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">TensorFlow</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">FastAPI</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">PostgreSQL</span>
-                            </div>
-                            
-                            <!-- Performance Metrics -->
-                            <div class="grid grid-cols-2 gap-4 mb-4">
-                                <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-success">94%</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Accuracy</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-warning">2.3s</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Response</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Action Buttons -->
-                            <div class="flex gap-3">
-                                <a href="javascript:void(0)" class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
-                                    Case Study
-                                </a>
-                                <a href="javascript:void(0)" class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project Card 3: Mobile App -->
-                    <div class="project-card rounded-lg overflow-hidden" data-category="mobile react">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.pixabay.com/photo/2016/11/29/06/15/mobile-phone-1867510_1280.jpg" alt="Mobile Application Interface" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
-                            <div class="absolute top-4 right-4">
-                                <span class="bg-accent/20 text-accent px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Award</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">CyberFit Tracker</h3>
-                            <p class="text-text-secondary font-exo text-sm mb-4">
-                                Cross-platform fitness tracking app with AI workout recommendations, social features, and real-time health monitoring.
-                            </p>
-                            
-                            <!-- Tech Stack -->
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">React Native</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Firebase</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Redux</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">ML Kit</span>
-                            </div>
-                            
-                            <!-- Performance Metrics -->
-                            <div class="grid grid-cols-2 gap-4 mb-4">
-                                <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-primary">50K+</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Downloads</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-success">4.8★</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Rating</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Action Buttons -->
-                            <div class="flex gap-3">
-                                <a href="javascript:void(0)" class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
-                                    App Store
-                                </a>
-                                <a href="javascript:void(0)" class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Project Card 4: Blockchain Platform -->
-                    <div class="project-card rounded-lg overflow-hidden" data-category="fullstack python">
+                    <!-- Project Card 11: ConnectSphere – Social Media Dashboard -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="fullstack client">
                         <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Blockchain Network Visualization" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <img src="https://images.unsplash.com/photo-1612831455540-5d3d1c46414f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="ConnectSphere Social Media Dashboard"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/3183180/pexels-photo-3183180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
                             <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
                             <div class="absolute top-4 right-4">
-                                <span class="bg-warning/20 text-warning px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Beta</span>
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">DecentraVault</h3>
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">ConnectSphere – Social Media
+                                Dashboard</h3>
                             <p class="text-text-secondary font-exo text-sm mb-4">
-                                Decentralized storage platform with smart contracts, encrypted file sharing, and blockchain-based access control.
+                                Built a comprehensive social media dashboard enabling messaging, content feeds, and
+                                AI-powered content curation, enhancing user engagement and real-time interaction.
                             </p>
-                            
-                            <!-- Tech Stack -->
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Solidity</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Web3.js</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">IPFS</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Ethereum</span>
-                            </div>
-                            
-                            <!-- Performance Metrics -->
-                            <div class="grid grid-cols-2 gap-4 mb-4">
-                                <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-accent">256-bit</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Encryption</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-primary">1.2K</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Users</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Action Buttons -->
-                            <div class="flex gap-3">
-                                <a href="javascript:void(0)" class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
-                                    Whitepaper
-                                </a>
-                                <a href="javascript:void(0)" class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Project Card 5: DevOps Platform -->
-                    <div class="project-card rounded-lg overflow-hidden" data-category="fullstack python">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="DevOps Pipeline Dashboard" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
-                            <div class="absolute top-4 right-4">
-                                <span class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Enterprise</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">AutoDeploy Pro</h3>
-                            <p class="text-text-secondary font-exo text-sm mb-4">
-                                Enterprise DevOps platform with automated CI/CD pipelines, container orchestration, and intelligent monitoring systems.
-                            </p>
-                            
                             <!-- Tech Stack -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Docker</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Kubernetes</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Jenkins</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">AWS</span>
-                            </div>
-                            
-                            <!-- Performance Metrics -->
-                            <div class="grid grid-cols-2 gap-4 mb-4">
-                                <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-success">99.9%</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Uptime</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-warning">85%</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Faster Deploy</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Action Buttons -->
-                            <div class="flex gap-3">
-                                <a href="javascript:void(0)" class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
-                                    Documentation
-                                </a>
-                                <a href="javascript:void(0)" class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                            
-                            <!-- Client Testimonial -->
-                            <div class="mt-4 p-3 bg-surface-800/30 rounded-lg border-l-2 border-success">
-                                <p class="text-xs text-text-secondary font-exo italic">"Reduced deployment time from hours to minutes."</p>
-                                <p class="text-xs text-success font-rajdhani mt-1">- Marcus Johnson, DevOps Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 6: Social Platform -->
-                    <div class="project-card rounded-lg overflow-hidden" data-category="react fullstack">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.pixabay.com/photo/2017/06/10/07/18/list-2389219_1280.png" alt="Social Media Platform Interface" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
-                            <div class="absolute top-4 right-4">
-                                <span class="bg-primary/20 text-primary px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Trending</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">ConnectSphere</h3>
-                            <p class="text-text-secondary font-exo text-sm mb-4">
-                                Next-gen social platform with AI content curation, real-time messaging, and advanced privacy controls for professional networking.
-                            </p>
-                            
-                            <!-- Tech Stack -->
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">React.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">React</span>
                                 <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">GraphQL</span>
                                 <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Socket.io</span>
-                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Redis</span>
                             </div>
-                            
+
                             <!-- Performance Metrics -->
                             <div class="grid grid-cols-2 gap-4 mb-4">
                                 <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-accent">125K</div>
+                                    <div class="text-lg font-orbitron font-bold text-accent">+5K</div>
                                     <div class="text-xs text-text-tertiary font-rajdhani">Active Users</div>
                                 </div>
                                 <div class="text-center">
-                                    <div class="text-lg font-orbitron font-bold text-primary">92%</div>
-                                    <div class="text-xs text-text-tertiary font-rajdhani">Engagement</div>
+                                    <div class="text-lg font-orbitron font-bold text-success">92%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Engagement Rate</div>
                                 </div>
                             </div>
-                            
+
                             <!-- Action Buttons -->
                             <div class="flex gap-3">
-                                <a href="javascript:void(0)" class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
-                                    Live Platform
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
                                 </a>
-                                <a href="javascript:void(0)" class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
                                 </a>
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- Project Card 12: Other Freelance Websites -->
+                    <div class="project-card rounded-lg overflow-hidden" data-category="fullstack client">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4430f5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                alt="Other Freelance Websites"
+                                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-900/80 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="bg-success/20 text-success px-2 py-1 rounded-full text-xs font-rajdhani font-semibold">Live</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-orbitron font-bold text-primary mb-3">Other Freelance Websites</h3>
+                            <p class="text-text-secondary font-exo text-sm mb-4">
+                                Delivered multiple custom freelance client websites with unique features, tailored CMS
+                                solutions, and AI content integration to meet client requirements.
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Next.js</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">React</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">Tailwind
+                                    CSS</span>
+                                <span class="tech-badge px-2 py-1 rounded-full text-xs font-rajdhani">CMS</span>
+                            </div>
+
+                            <!-- Performance Metrics -->
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-accent">+15</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Client Websites</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-orbitron font-bold text-success">100%</div>
+                                    <div class="text-xs text-text-tertiary font-rajdhani">Client Satisfaction</div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="javascript:void(0)"
+                                    class="flex-1 bg-gradient-to-r from-primary to-accent px-4 py-2 rounded-lg text-background font-rajdhani font-semibold text-sm text-center transition-smooth hover:shadow-glow-primary">
+                                    Live Demo
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="px-4 py-2 border border-primary/50 rounded-lg text-primary hover:bg-primary/10 transition-smooth">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
-                <!-- Load More Button -->
+                <!-- Load More Button
                 <div class="text-center mt-12">
-                    <button id="load-more" class="px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-lg font-rajdhani font-semibold text-background transition-smooth hover:shadow-glow-primary-lg hover:scale-105">
+                    <button id="load-more"
+                        class="px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-lg font-rajdhani font-semibold text-background transition-smooth hover:shadow-glow-primary-lg hover:scale-105">
                         Load More Projects
                     </button>
-                </div>
+                </div> -->
             </div>
         </section>
 
-        <!-- Featured Case Study Section -->
-        <section class="py-20 px-4 sm:px-6 lg:px-8 bg-surface-900/30 border-y border-primary/20">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-5xl font-orbitron font-bold text-primary glow-primary mb-6">
-                        Featured Case Study
-                    </h2>
-                    <p class="text-xl text-text-secondary font-rajdhani max-w-3xl mx-auto">
-                        Deep dive into the NeoCommerce Platform - A complete transformation story
+       <!-- Featured Case Study Section -->
+<section class="py-14 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-orbitron font-bold text-primary p-8 glow-primary  mb-6">
+                Featured Case Studies
+            </h2>
+            <p class="text-xl text-text-secondary font-rajdhani max-w-3xl mx-auto">
+                In-depth look at the most complex projects: WhatsApp Automation & AI HR Assistant
+            </p>
+        </div>
+
+        <!-- Case Study Grid -->
+        <div class="case-study-section grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- WhatsApp Automation Case Study -->
+            <div class="space-y-8">
+                <div class="glass-nav rounded-lg p-8 border-glow">
+                    <h3 class="text-2xl font-orbitron font-bold text-accent mb-4">WhatsApp Automation & Voice Calling</h3>
+                    <p class="text-text-secondary font-exo leading-relaxed">
+                        Automating WhatsApp messages and voice calls for client support and lead follow-ups was a huge challenge due to real-time response requirements and multi-device handling.
                     </p>
                 </div>
 
-                <div class="case-study-section grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Case Study Content -->
-                    <div class="space-y-8">
-                        <div class="glass-nav rounded-lg p-8 border-glow">
-                            <h3 class="text-2xl font-orbitron font-bold text-accent mb-4">The Challenge</h3>
-                            <p class="text-text-secondary font-exo leading-relaxed">
-                                Client wanted a modern, responsive, AI-assisted website for India’s first global music conference, with dynamic content, interactive UI, and scalable architecture.
-                            </p>
-                        </div>
+                <div class="glass-nav rounded-lg p-8 border-glow">
+                    <h3 class="text-2xl font-orbitron font-bold text-primary mb-4">Solution</h3>
+                    <p class="text-text-secondary font-exo leading-relaxed mb-4">
+                        Implemented using <strong>Node.js</strong> + <strong>WhatsApp-web.js</strong> + <strong>n8n workflows</strong> with AI APIs for smart replies and automated lead qualification. Ensured secure, multi-user sessions and scalable automation.
+                    </p>
 
-                        <div class="glass-nav rounded-lg p-8 border-glow">
-                            <h3 class="text-2xl font-orbitron font-bold text-primary mb-4">The Solution</h3>
-                            <p class="text-text-secondary font-exo leading-relaxed mb-4">
-                               Built a Next.js + Tailwind CSS platform with AI integration for content automation and enhanced user experience. Implemented responsive design, interactive sections, and optimized performance for smooth browsing.
-                            </p>
-                            
-                            <!-- Architecture Diagram Placeholder -->
-                            <div class="bg-surface-800/50 rounded-lg p-6 border border-primary/20">
-                                <div class="text-center text-text-tertiary font-rajdhani text-sm mb-4">System Architecture</div>
-                                <div class="grid grid-cols-3 gap-4">
-                                    <div class="bg-primary/20 rounded p-3 text-center">
-                                        <div class="text-primary font-rajdhani font-semibold text-xs">Frontend</div>
-                                        <div class="text-text-tertiary text-xs mt-1">Next.js, React.js, Tailwind CSS</div>
-                                    </div>
-                                    <div class="bg-accent/20 rounded p-3 text-center">
-                                        <div class="text-accent font-rajdhani font-semibold text-xs">Backend / API Layer</div>
-                                        <div class="text-text-tertiary text-xs mt-1">Node.js, Express.js</div>
-                                    </div>
-                                    <div class="bg-success/20 rounded p-3 text-center">
-                                        <div class="text-success font-rajdhani font-semibold text-xs">Database</div>
-                                        <div class="text-text-tertiary text-xs mt-1">MongoDB, Supabase</div>
-                                    </div>
-                                </div>
+                    <!-- Architecture Diagram -->
+                    <div class="bg-surface-800/50 rounded-lg p-6 border border-primary/20">
+                        <div class="text-center text-text-tertiary font-rajdhani text-sm mb-4">System Architecture</div>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-primary/20 rounded p-3 text-center">
+                                <div class="text-primary font-rajdhani font-semibold text-xs">Frontend</div>
+                                <div class="text-text-tertiary text-xs mt-1">React.js Dashboard</div>
                             </div>
-                        </div>
-
-                        <div class="glass-nav rounded-lg p-8 border-glow">
-                            <h3 class="text-2xl font-orbitron font-bold text-success mb-4">The Results</h3>
-                            <div class="grid grid-cols-2 gap-6">
-                                <div class="text-center">
-                                    <div class="text-3xl font-orbitron font-bold text-success mb-2">340%</div>
-                                    <div class="text-text-secondary font-rajdhani text-sm">Conversion Increase</div>
-                                    <div class="w-full bg-surface-800 rounded-full h-2 mt-2">
-                                        <div class="progress-bar h-2 rounded-full" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-3xl font-orbitron font-bold text-primary mb-2">0.8s</div>
-                                    <div class="text-text-secondary font-rajdhani text-sm">Load Time</div>
-                                    <div class="w-full bg-surface-800 rounded-full h-2 mt-2">
-                                        <div class="progress-bar h-2 rounded-full" style="width: 95%"></div>
-                                    </div>
-                                </div>
+                            <div class="bg-accent/20 rounded p-3 text-center">
+                                <div class="text-accent font-rajdhani font-semibold text-xs">Backend</div>
+                                <div class="text-text-tertiary text-xs mt-1">Node.js + n8n + WhatsApp API</div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Visual Elements -->
-                    <div class="space-y-8">
-                        <!-- Before/After Comparison -->
-                        <div class="glass-nav rounded-lg p-6 border-glow">
-                            <h4 class="text-lg font-orbitron font-bold text-primary mb-4 text-center">Before vs After</h4>
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="text-center">
-                                    <div class="bg-error/20 rounded-lg p-4 mb-2">
-                                        <div class="text-error font-orbitron font-bold text-2xl">12%</div>
-                                        <div class="text-text-tertiary font-rajdhani text-xs">Conversion Rate</div>
-                                    </div>
-                                    <div class="text-text-secondary font-rajdhani text-sm">Before</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="bg-success/20 rounded-lg p-4 mb-2">
-                                        <div class="text-success font-orbitron font-bold text-2xl">53%</div>
-                                        <div class="text-text-tertiary font-rajdhani text-xs">Conversion Rate</div>
-                                    </div>
-                                    <div class="text-text-secondary font-rajdhani text-sm">After</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Code Snippet -->
-                        <div class="glass-nav rounded-lg p-6 border-glow">
-                            <h4 class="text-lg font-orbitron font-bold text-accent mb-4">Key Implementation</h4>
-                            <div class="bg-background/80 rounded-lg p-4 font-fira text-sm">
-                                <div class="text-primary">// AI-Powered Recommendations</div>
-                                <div class="text-text-secondary mt-2">const content = await</div>
-                                <div class="text-accent ml-4">aiEngine.generatePageContent({</div>
-                                <div class="text-text-secondary ml-8">eventId, userPreferences</div>
-                                <div class="text-accent ml-4">});</div>
-                            </div>
-                            <div class="bg-background/80 rounded-lg p-4 font-fira text-sm">
-                                <!-- <div class="text-primary">// AI-Powered Recommendations</div> -->
-                                <div class="text-text-secondary mt-2">const aiAssistant = await</div>
-                                <div class="text-accent ml-4">aiEngine.createAssistant({</div>
-                                <div class="text-text-secondary ml-8">type: "voice & chat", targetModule: "eventSchedule"</div>
-                                <div class="text-accent ml-4">});</div>
-                            </div>
-                        </div>
-
-                        <!-- Client Testimonial -->
-                        <div class="glass-nav rounded-lg p-6 border-glow border-l-4 border-l-accent">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
-                                    <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V21C3 22.11 3.89 23 5 23H19C20.11 23 21 22.11 21 21V9M19 9H14V4H19V9Z"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="text-text-secondary font-exo italic mb-3">
-                                        "Akash didn’t just build our website — he brought AI-driven automation and interactivity that elevated our entire digital presence."
-                                    </p>
-                                    <div class="text-accent font-rajdhani font-semibold">Aditya</div>
-                                    <div class="text-text-tertiary font-rajdhani text-sm">Co-Founder, Authera</div>
-                                </div>
+                            <div class="bg-success/20 rounded p-3 text-center">
+                                <div class="text-success font-rajdhani font-semibold text-xs">Database</div>
+                                <div class="text-text-tertiary text-xs mt-1">MongoDB</div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="glass-nav rounded-lg p-8 border-glow">
+                    <h3 class="text-2xl font-orbitron font-bold text-success mb-4">Results</h3>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-orbitron font-bold text-success mb-2">+10K</div>
+                            <div class="text-text-secondary font-rajdhani text-sm">Calls / Messages per Month</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-orbitron font-bold text-primary mb-2">95%</div>
+                            <div class="text-text-secondary font-rajdhani text-sm">Customer Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <!-- AI HR Platform Case Study -->
+            <div class="space-y-8">
+                <div class="glass-nav rounded-lg p-8 border-glow">
+                    <h3 class="text-2xl font-orbitron font-bold text-accent mb-4">AI Hiring Automation</h3>
+                    <p class="text-text-secondary font-exo leading-relaxed">
+                        Automating the hiring workflow was challenging due to job postings, candidate screening, and onboarding across WhatsApp, requiring seamless AI-driven automation.
+                    </p>
+                </div>
+
+                <div class="glass-nav rounded-lg p-8 border-glow">
+                    <h3 class="text-2xl font-orbitron font-bold text-primary mb-4">Solution</h3>
+                    <p class="text-text-secondary font-exo leading-relaxed mb-4">
+                        Built using <strong>Node.js</strong>, <strong>WhatsApp API</strong>, and <strong>AI NLP models</strong> to automate candidate screening, job posting updates, and onboarding messages. Integrated with CRM for lead tracking and analytics.
+                    </p>
+
+                    <!-- Architecture Diagram -->
+                    <div class="bg-surface-800/50 rounded-lg p-6 border border-primary/20">
+                        <div class="text-center text-text-tertiary font-rajdhani text-sm mb-4">System Architecture</div>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-primary/20 rounded p-3 text-center">
+                                <div class="text-primary font-rajdhani font-semibold text-xs">Frontend</div>
+                                <div class="text-text-tertiary text-xs mt-1">React.js Dashboard</div>
+                            </div>
+                            <div class="bg-accent/20 rounded p-3 text-center">
+                                <div class="text-accent font-rajdhani font-semibold text-xs">Backend</div>
+                                <div class="text-text-tertiary text-xs mt-1">Node.js + WhatsApp API + AI NLP</div>
+                            </div>
+                            <div class="bg-success/20 rounded p-3 text-center">
+                                <div class="text-success font-rajdhani font-semibold text-xs">Database</div>
+                                <div class="text-text-tertiary text-xs mt-1">MongoDB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-nav rounded-lg p-8 border-glow">
+                    <h3 class="text-2xl font-orbitron font-bold text-success mb-4">Results</h3>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-orbitron font-bold text-success mb-2">80%</div>
+                            <div class="text-text-secondary font-rajdhani text-sm">Screening Automation Efficiency</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-orbitron font-bold text-primary mb-2">50%</div>
+                            <div class="text-text-secondary font-rajdhani text-sm">Reduction in Manual Work</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
         <!-- Call to Action -->
         <section class="py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-5xl font-orbitron font-bold text-primary glow-primary mb-6">
+                <h2 class="text-3xl md:text-5xl font-orbitron font-bold text-primary p-8 glow-primary mb-6">
                     Ready to Build Something Amazing?
                 </h2>
                 <p class="text-xl text-text-secondary font-rajdhani mb-8">
                     Let's discuss your next project and create digital solutions that drive real results.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                    <a href="contact_interface.html" class="px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-lg font-rajdhani font-semibold text-background text-lg transition-smooth hover:shadow-glow-primary-lg hover:scale-105">
+                    <a href="contact_interface.html"
+                        class="px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-lg font-rajdhani font-semibold text-background text-lg transition-smooth hover:shadow-glow-primary-lg hover:scale-105">
                         Start Your Project
                     </a>
-                    <a href="about_protocol.html" class="px-8 py-4 border-2 border-accent rounded-lg font-rajdhani font-semibold text-accent text-lg transition-smooth hover:bg-accent hover:text-background hover:shadow-glow-accent-lg hover:scale-105">
+                    <a href="about_protocol.html"
+                        class="px-8 py-4 border-2 border-accent rounded-lg font-rajdhani font-semibold text-accent text-lg transition-smooth hover:bg-accent hover:text-background hover:shadow-glow-accent-lg hover:scale-105">
                         Learn More About Me
                     </a>
                 </div>
@@ -745,17 +1203,20 @@
             <div class="flex justify-center space-x-6 mt-4">
                 <a href="javascript:void(0)" class="text-text-tertiary hover:text-primary transition-smooth">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.024-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                        <path
+                            d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.024-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
                     </svg>
                 </a>
                 <a href="javascript:void(0)" class="text-text-tertiary hover:text-primary transition-smooth">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                     </svg>
                 </a>
                 <a href="javascript:void(0)" class="text-text-tertiary hover:text-primary transition-smooth">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
                 </a>
             </div>
@@ -766,7 +1227,7 @@
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
@@ -785,12 +1246,12 @@
                     btn.classList.add('text-text-secondary');
                     btn.classList.remove('text-primary');
                 });
-                
+
                 // Add active class to clicked button
                 button.classList.add('active');
                 button.classList.remove('text-text-secondary');
                 button.classList.add('text-primary');
-                
+
                 const filter = button.getAttribute('data-filter');
                 filterProjects(filter);
             });
@@ -799,7 +1260,7 @@
         function filterProjects(filter) {
             projectCards.forEach(card => {
                 const categories = card.getAttribute('data-category');
-                
+
                 if (filter === 'all' || categories.includes(filter)) {
                     card.style.display = 'block';
                     card.style.animation = 'slide-in 0.5s ease-out';
@@ -812,12 +1273,12 @@
         // Search functionality
         searchInput.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase();
-            
+
             projectCards.forEach(card => {
                 const title = card.querySelector('h3').textContent.toLowerCase();
                 const description = card.querySelector('p').textContent.toLowerCase();
                 const techStack = Array.from(card.querySelectorAll('.tech-badge')).map(badge => badge.textContent.toLowerCase()).join(' ');
-                
+
                 if (title.includes(searchTerm) || description.includes(searchTerm) || techStack.includes(searchTerm)) {
                     card.style.display = 'block';
                 } else {
@@ -834,16 +1295,16 @@
                 btn.classList.add('text-text-secondary');
                 btn.classList.remove('text-primary');
             });
-            
+
             // Activate "All Projects" button
             const allButton = document.querySelector('[data-filter="all"]');
             allButton.classList.add('active');
             allButton.classList.remove('text-text-secondary');
             allButton.classList.add('text-primary');
-            
+
             // Clear search
             searchInput.value = '';
-            
+
             // Show all projects
             projectCards.forEach(card => {
                 card.style.display = 'block';
@@ -856,7 +1317,7 @@
             // Simulate loading more projects
             loadMoreButton.textContent = 'Loading...';
             loadMoreButton.disabled = true;
-            
+
             setTimeout(() => {
                 loadMoreButton.textContent = 'All Projects Loaded';
                 loadMoreButton.classList.add('opacity-50', 'cursor-not-allowed');
@@ -868,14 +1329,14 @@
             const start = 0;
             const increment = target / (duration / 16);
             let current = start;
-            
+
             const timer = setInterval(() => {
                 current += increment;
                 if (current >= target) {
                     current = target;
                     clearInterval(timer);
                 }
-                
+
                 element.textContent = Math.floor(current);
             }, 16);
         }
@@ -897,7 +1358,7 @@
                             animateCounter(counter, target);
                         }
                     });
-                    
+
                     // Add animation classes
                     entry.target.classList.add('animate-in');
                 }
@@ -938,12 +1399,13 @@
             card.addEventListener('mouseenter', () => {
                 card.style.transform = 'translateY(-8px) scale(1.02)';
             });
-            
+
             card.addEventListener('mouseleave', () => {
                 card.style.transform = 'translateY(0) scale(1)';
             });
         });
     </script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
+
 </html>
