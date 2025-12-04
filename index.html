@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CyberFolio - Digital Portfolio</title>
+    <title>PortFolio - Digital Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
     <style>
+        /* === Body & Fonts === */
         body {
             margin: 0;
             padding: 0;
@@ -19,25 +20,37 @@
             align-items: center;
         }
 
+        /* === Loader Container === */
         .loading-container {
             text-align: center;
             position: relative;
         }
 
+        /* === Cyber Logo === */
         .cyber-logo {
             font-size: 3rem;
             font-weight: bold;
             margin-bottom: 2rem;
             text-shadow: 0 0 20px #00ff41;
-            animation: glow 2s ease-in-out infinite alternate;
+            animation: glow 2s ease-in-out infinite alternate, glitch 3s infinite;
         }
 
+        /* === Loading Text === */
         .loading-text {
             font-size: 1.2rem;
             margin-bottom: 1rem;
             opacity: 0.8;
         }
 
+        .terminal-cursor {
+            display: inline-block;
+            background: #00ff41;
+            animation: blink 1s infinite;
+            width: 10px;
+            margin-left: 2px;
+        }
+
+        /* === Progress Bar === */
         .progress-bar {
             width: 300px;
             height: 4px;
@@ -51,23 +64,21 @@
             height: 100%;
             background: linear-gradient(90deg, #00ff41, #00cc33);
             width: 0%;
-            animation: loading 3s ease-in-out forwards;
             box-shadow: 0 0 10px #00ff41;
         }
 
-        .terminal-cursor {
-            display: inline-block;
-            background: #00ff41;
-            animation: blink 1s infinite;
+        /* === Redirect Message === */
+        .redirect-message {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0;
+            animation: fadeIn 1s ease-in 3.5s forwards;
         }
 
+        /* === Animations === */
         @keyframes glow {
             from { text-shadow: 0 0 20px #00ff41; }
             to { text-shadow: 0 0 30px #00ff41, 0 0 40px #00ff41; }
-        }
-
-        @keyframes loading {
-            to { width: 100%; }
         }
 
         @keyframes blink {
@@ -75,23 +86,24 @@
             51%, 100% { opacity: 0; }
         }
 
-        .redirect-message {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            opacity: 0;
-            animation: fadeIn 1s ease-in 2.5s forwards;
-        }
-
         @keyframes fadeIn {
             to { opacity: 1; }
         }
+
+        @keyframes glitch {
+            0% { text-shadow: 2px 2px red; }
+            20% { text-shadow: -2px -2px cyan; }
+            40% { text-shadow: 2px -2px lime; }
+            60% { text-shadow: -2px 2px yellow; }
+            80% { text-shadow: 2px 2px magenta; }
+            100% { text-shadow: 0 0 #00ff41; }
+        }
     </style>
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcyberfolio8246back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
 </head>
 <body>
     <div class="loading-container">
-        <div class="cyber-logo">CYBERFOLIO</div>
-        <div class="loading-text">Initializing digital portfolio<span class="terminal-cursor">_</span></div>
+        <div class="cyber-logo">PORTFOLIO</div>
+        <div class="loading-text">Initializing digital portfolio<span class="terminal-cursor"></span></div>
         <div class="progress-bar">
             <div class="progress-fill"></div>
         </div>
@@ -99,30 +111,49 @@
     </div>
 
     <script>
-        // Redirect to hero command center after loading animation
-        setTimeout(function() {
-            window.location.href = 'pages/hero_command_center.html';
-        }, 3500);
-
-        // Add some interactive terminal-like effects
         const loadingText = document.querySelector('.loading-text');
+        const progressFill = document.querySelector('.progress-fill');
         const messages = [
             'Initializing digital portfolio',
             'Loading cyber modules',
             'Establishing secure connection',
             'Accessing command center'
         ];
-        
+
         let messageIndex = 0;
-        const messageInterval = setInterval(() => {
-            if (messageIndex < messages.length - 1) {
-                messageIndex++;
-                loadingText.innerHTML = messages[messageIndex] + '<span class="terminal-cursor">_</span>';
+        let charIndex = 0;
+        let width = 0;
+
+        function typeWriter() {
+            if (charIndex < messages[messageIndex].length) {
+                loadingText.innerHTML = messages[messageIndex].substring(0, charIndex+1) + '<span class="terminal-cursor"></span>';
+                charIndex++;
+                setTimeout(typeWriter, 80);
             } else {
-                clearInterval(messageInterval);
+                setTimeout(() => {
+                    messageIndex++;
+                    charIndex = 0;
+                    if (messageIndex < messages.length) {
+                        typeWriter();
+                    }
+                }, 500);
             }
-        }, 800);
+        }
+        typeWriter();
+
+        // Progress bar animation sync
+        const progressInterval = setInterval(() => {
+            if (width >= 100) {
+                clearInterval(progressInterval);
+                // Redirect after progress completes
+                setTimeout(() => {
+                    window.location.href = 'pages/hero_command_center.html';
+                }, 300);
+            } else {
+                width += 1.5; // Adjust speed if needed
+                progressFill.style.width = width + '%';
+            }
+        }, 50);
     </script>
-<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
 </body>
 </html>
