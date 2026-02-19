@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PortFolio - Digital Portfolio</title>
+    <title>Protocol Initialization | Akash Kumar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@900&family=JetBrains+Mono:wght@800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
     <style>
-        /* === Body & Fonts === */
+        :root {
+            --primary: #00FFFF;
+            --bg: #030303;
+        }
+
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-            font-family: 'Courier New', monospace;
-            color: #00ff41;
+            background: var(--bg);
+            color: white;
+            font-family: 'Inter', sans-serif;
             overflow: hidden;
             height: 100vh;
             display: flex;
@@ -20,141 +31,188 @@
             align-items: center;
         }
 
-        /* === Loader Container === */
-        .loading-container {
+        .premium-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+        }
+
+        .noise-overlay {
+            position: fixed;
+            inset: 0;
+            background: url('https://grainy-gradients.vercel.app/noise.svg');
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 50;
+        }
+
+        .loader-wrap {
+            position: relative;
+            z-index: 10;
             text-align: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 2rem;
+        }
+
+        .logo-box {
+            margin-bottom: 3rem;
             position: relative;
         }
 
-        /* === Cyber Logo === */
-        .cyber-logo {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 2rem;
-            text-shadow: 0 0 20px #00ff41;
-            animation: glow 2s ease-in-out infinite alternate, glitch 3s infinite;
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            font-style: italic;
+            text-transform: uppercase;
+            line-height: 0.8;
+            margin-bottom: 0.5rem;
         }
 
-        /* === Loading Text === */
-        .loading-text {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            opacity: 0.8;
+        .logo-sub {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.5em;
+            color: var(--primary);
+            text-transform: uppercase;
+            font-weight: 800;
+            opacity: 0.6;
         }
 
-        .terminal-cursor {
-            display: inline-block;
-            background: #00ff41;
-            animation: blink 1s infinite;
-            width: 10px;
-            margin-left: 2px;
-        }
-
-        /* === Progress Bar === */
-        .progress-bar {
-            width: 300px;
-            height: 4px;
-            background: rgba(0, 255, 65, 0.2);
-            border-radius: 2px;
+        .progress-container {
+            width: 100%;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 99px;
             overflow: hidden;
-            margin: 0 auto;
+            margin-bottom: 1.5rem;
+            position: relative;
         }
 
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #00ff41, #00cc33);
+        .progress-bar {
             width: 0%;
-            box-shadow: 0 0 10px #00ff41;
+            height: 100%;
+            background: var(--primary);
+            box-shadow: 0 0 20px var(--primary);
+            transition: width 0.1s linear;
         }
 
-        /* === Redirect Message === */
-        .redirect-message {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            opacity: 0;
-            animation: fadeIn 1s ease-in 3.5s forwards;
+        .status-text {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: rgba(255, 255, 255, 0.3);
+            font-weight: 700;
         }
 
-        /* === Animations === */
-        @keyframes glow {
-            from { text-shadow: 0 0 20px #00ff41; }
-            to { text-shadow: 0 0 30px #00ff41, 0 0 40px #00ff41; }
+        .scan-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(0, 255, 255, 0.05), transparent);
+            animation: scan 4s linear infinite;
+            pointer-events: none;
         }
 
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
+        @keyframes scan {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
         }
 
-        @keyframes fadeIn {
-            to { opacity: 1; }
+        .loading-dot {
+            display: inline-block;
+            animation: dot-pulse 1.5s infinite;
         }
 
-        @keyframes glitch {
-            0% { text-shadow: 2px 2px red; }
-            20% { text-shadow: -2px -2px cyan; }
-            40% { text-shadow: 2px -2px lime; }
-            60% { text-shadow: -2px 2px yellow; }
-            80% { text-shadow: 2px 2px magenta; }
-            100% { text-shadow: 0 0 #00ff41; }
+        @keyframes dot-pulse {
+
+            0%,
+            100% {
+                opacity: 0.2;
+            }
+
+            50% {
+                opacity: 1;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="loading-container">
-        <div class="cyber-logo">PORTFOLIO</div>
-        <div class="loading-text">Initializing digital portfolio<span class="terminal-cursor"></span></div>
-        <div class="progress-bar">
-            <div class="progress-fill"></div>
+    <div class="premium-grid"></div>
+    <div class="noise-overlay"></div>
+    <div class="scan-line"></div>
+
+    <div class="loader-wrap">
+        <div class="logo-box">
+            <h1 class="logo-text">AKASH<span style="color: var(--primary);">.</span>K</h1>
+            <div class="logo-sub">Command Center Initialization</div>
         </div>
-        <div class="redirect-message">Redirecting to command center...</div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="status-text">
+            System Protocol: <span id="statusMsg">Syncing Neural Core</span><span class="loading-dot">...</span>
+        </div>
     </div>
 
     <script>
-        const loadingText = document.querySelector('.loading-text');
-        const progressFill = document.querySelector('.progress-fill');
-        const messages = [
-            'Initializing digital portfolio',
-            'Loading cyber modules',
-            'Establishing secure connection',
-            'Accessing command center'
+        const progressBar = document.getElementById('progressBar');
+        const statusMsg = document.getElementById('statusMsg');
+
+        const protocols = [
+            "Syncing Neural Core",
+            "Establishing Secure Uplink",
+            "Loading Tactical Assets",
+            "Verifying Vault Security",
+            "Booting Command UI",
+            "Protocol Ready"
         ];
 
-        let messageIndex = 0;
-        let charIndex = 0;
         let width = 0;
+        let protocolIndex = 0;
 
-        function typeWriter() {
-            if (charIndex < messages[messageIndex].length) {
-                loadingText.innerHTML = messages[messageIndex].substring(0, charIndex+1) + '<span class="terminal-cursor"></span>';
-                charIndex++;
-                setTimeout(typeWriter, 80);
-            } else {
-                setTimeout(() => {
-                    messageIndex++;
-                    charIndex = 0;
-                    if (messageIndex < messages.length) {
-                        typeWriter();
-                    }
-                }, 500);
-            }
-        }
-        typeWriter();
-
-        // Progress bar animation sync
-        const progressInterval = setInterval(() => {
+        const interval = setInterval(() => {
             if (width >= 100) {
-                clearInterval(progressInterval);
-                // Redirect after progress completes
+                clearInterval(interval);
                 setTimeout(() => {
-                    window.location.href = 'pages/hero_command_center.html';
-                }, 300);
+                    document.body.style.opacity = '0';
+                    document.body.style.transition = 'opacity 0.5s ease';
+                    setTimeout(() => {
+                        window.location.href = 'pages/hero_command_center.html';
+                    }, 500);
+                }, 400);
             } else {
-                width += 1.5; // Adjust speed if needed
-                progressFill.style.width = width + '%';
+                width += (Math.random() * 2) + 0.5;
+                if (width > 100) width = 100;
+                progressBar.style.width = width + '%';
+
+                // Change protocol text based on progress
+                const nextProtocolIndex = Math.floor((width / 100) * protocols.length);
+                if (nextProtocolIndex > protocolIndex && nextProtocolIndex < protocols.length) {
+                    protocolIndex = nextProtocolIndex;
+                    statusMsg.innerText = protocols[protocolIndex];
+                }
             }
         }, 50);
     </script>
-<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+    <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
 </body>
+
 </html>
